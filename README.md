@@ -67,7 +67,7 @@ This project implements **Distance Vector Routing (DVR)** and **Link State Routi
   - Calls `printLSRTable(src, dist, prev)` for each source node
 
 - **`printDVRTable(...)` / `printLSRTable(...)`**  
-  - Formats “Dest\tMetric\tNext Hop” rows, with “–” for self or unreachable
+  - Formats “Dest   Metric  Next Hop” rows, with “–” for self or unreachable
 
 
 
