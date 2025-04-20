@@ -69,27 +69,7 @@ This project implements **Distance Vector Routing (DVR)** and **Link State Routi
 - **`printDVRTable(...)` / `printLSRTable(...)`**  
   - Formats “Dest\tMetric\tNext Hop” rows, with “–” for self or unreachable
 
-#### Code Flow Diagrams
 
-```mermaid
-flowchart LR
-    subgraph DVR
-      A0[Init dist & nextHop] --> B0[Repeat until no update]
-      B0 --> C0{For u,v,k}
-      C0 -->|if dist[u][v] > dist[u][k]+dist[k][v]| D0[Update dist & nextHop]
-      C0 -->|else| E0[No change]
-      D0 --> B0
-      E0 --> B0
-    end
-
-    subgraph LSR
-      A1[For each src] --> B1[Init dist[src]=0]
-      B1 --> C1[Select unvisited u with min dist]
-      C1 --> D1[Relax neighbors v]
-      D1 --> C1
-      C1 --> E1[Done → print table]
-    end
----
 
 ## Execution Steps
 
