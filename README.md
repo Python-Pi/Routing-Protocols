@@ -89,7 +89,6 @@ flowchart LR
       D1 --> C1
       C1 --> E1[Done → print table]
     end
-
 ---
 
 ## Execution Steps
@@ -127,7 +126,7 @@ g++ routing_sim.cpp -o routing_sim
 
 ## Technical Details
 
-- **Language:** C++11  
+- **Language:** C++  
 - **Infinite Cost:** Represented by `const int INF = 9999`  
 - **Data Structures:**  
   - `vector<vector<int>> dist, nextHop` for DVR  
