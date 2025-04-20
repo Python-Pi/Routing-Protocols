@@ -75,7 +75,7 @@ This project implements **Distance Vector Routing (DVR)** and **Link State Routi
 
 1. **Compile**  
    ```bash
-   g++ routing_sim.cpp -o routing_sim
+   make
    ```
 2. **Run**  
    ```bash
@@ -89,20 +89,6 @@ This project implements **Distance Vector Routing (DVR)** and **Link State Routi
 
 ---
 
-## Building and Running
-
-```bash
-# Compile
-g++ routing_sim.cpp -o routing_sim
-
-# Run with your adjacency matrix file
-./routing_sim input.txt
-```
-
-> **Note:** `input.txt` must begin with node‐count `n`, followed by an `n×n` whitespace‑separated matrix.  
-> Off‑diagonal zeros are treated as no‑link (`INF = 9999`).
-
----
 
 ## Technical Details
 
